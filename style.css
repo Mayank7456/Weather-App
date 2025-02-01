@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff6363;
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 85%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    background: #fcefee;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 12px 20px;
+    width: 60%;
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    transform: scale(1.05);
+}
+
+
+#error-message {
+    color: #ff4757;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+#weather-result {
+    margin-top: 20px;
+    display: block;
+}
+
+#city-name {
+    font-size: 1.7rem;
+    color: #ff6363;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 70%;
+    }
+
+    #city-name {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    #city-name {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
